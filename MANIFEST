@@ -1,0 +1,13 @@
+LICENSE
+Makefile.PL
+MANIFEST
+lib/Dpchrist/TriangularNumber.pm
+t/0_compile_modules.t
+t/1_Dpchrist-TriangularNumber.t
+t/2_triangular_inverse.t
+t/2_triangular_number.t
+t/3_is_triangular_number.t
+t/9_pod.t
+t/9_prereq.t
+t/example.t
+META.yml                                 Module meta-data (added by MakeMaker)
