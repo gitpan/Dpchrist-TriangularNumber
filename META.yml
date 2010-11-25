@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Dpchrist-TriangularNumber
-version:            1.015
+version:            1.016
 abstract:           Perl extension for Triangular numbers.
 author:
     - David Paul Christensen dpchrist@holgerdanske.com

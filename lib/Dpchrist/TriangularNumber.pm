@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: TriangularNumber.pm,v 1.15 2010-07-03 04:52:45 dpchrist Exp $
+# $Id: TriangularNumber.pm,v 1.16 2010-11-25 02:57:37 dpchrist Exp $
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ See the script t/example.t:
 
     2010-07-02 21:43:34 dpchrist@p43400e ~/Dpchrist-TriangularNumber
     $ cat t/example.t 
-    # $Id: TriangularNumber.pm,v 1.15 2010-07-03 04:52:45 dpchrist Exp $
+    # $Id: TriangularNumber.pm,v 1.16 2010-11-25 02:57:37 dpchrist Exp $
     # Copyright 2010 by David Christensen dpchrist@holgerdanske.com
 
     use Test::More tests => 1;
@@ -94,7 +94,6 @@ package Dpchrist::TriangularNumber;
 # uses/ requires:
 #----------------------------------------------------------------------
 
-use 5.010;
 use strict;
 use warnings;
 
@@ -121,7 +120,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = sprintf("%d.%03d", q$Revision: 1.15 $ =~ /(\d+)/g);
+our $VERSION = sprintf("%d.%03d", q$Revision: 1.16 $ =~ /(\d+)/g);
 
 #######################################################################
 
