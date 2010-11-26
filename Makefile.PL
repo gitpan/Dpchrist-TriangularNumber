@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: Makefile.PL,v 1.6 2010-11-25 20:40:59 dpchrist Exp $
+# $Id: Makefile.PL,v 1.7 2010-11-26 21:07:38 dpchrist Exp $
 #
 # Copyright 2010 by David Paul Christensen dpchrist@holgerdanske.com
 #
@@ -22,8 +22,8 @@ use ExtUtils::MakeMaker;
 
 use Dpchrist::Module::MakefilePL (
     -mcpani             => $ENV{CPAN_AUTHORID},
-    -pod2html           => qw(lib/Dpchrist/TriangularNumber.pm),
-    -readme		=> qw(lib/Dpchrist/TriangularNumber.pm),
+    -pod2html           => 'lib/Dpchrist/TriangularNumber.pm',
+    -readme		=> 'lib/Dpchrist/TriangularNumber.pm',
     -release            => $ENV{RELEASE_ROOT},
 );
 
@@ -31,8 +31,8 @@ WriteMakefile(
     NAME		=> 'Dpchrist-TriangularNumber',
     VERSION_FROM	=> 'lib/Dpchrist/TriangularNumber.pm',
     PREREQ_PM		=> {
-	'Dpchrist::Debug'	=> 1.041,
-	'Dpchrist::Module'	=> 1.021,
+	'Dpchrist::Debug'	=> 1.042,
+	'Dpchrist::Module'	=> 1.023,
 	'feature'		=> 0,
     },
     ABSTRACT_FROM	=> 'lib/Dpchrist/TriangularNumber.pm',

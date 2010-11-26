@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: TriangularNumber.pm,v 1.17 2010-11-25 20:40:59 dpchrist Exp $
+# $Id: TriangularNumber.pm,v 1.18 2010-11-26 21:07:38 dpchrist Exp $
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ See the script t/example.t:
 
     2010-07-02 21:43:34 dpchrist@p43400e ~/Dpchrist-TriangularNumber
     $ cat t/example.t 
-    # $Id: TriangularNumber.pm,v 1.17 2010-11-25 20:40:59 dpchrist Exp $
+    # $Id: TriangularNumber.pm,v 1.18 2010-11-26 21:07:38 dpchrist Exp $
     # Copyright 2010 by David Christensen dpchrist@holgerdanske.com
 
     use Test::More tests => 1;
@@ -43,7 +43,7 @@ Output:
 
 =head1 DESCRIPTION
 
-This documentation describes module revision $Revision: 1.17 $.
+This documentation describes module revision $Revision: 1.18 $.
 
 
 This is alpha test level software
@@ -127,7 +127,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = sprintf("%d.%03d", q$Revision: 1.17 $ =~ /(\d+)/g);
+our $VERSION = sprintf("%d.%03d", q$Revision: 1.18 $ =~ /(\d+)/g);
 
 #######################################################################
 
