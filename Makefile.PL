@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: Makefile.PL,v 1.8 2010-11-27 03:38:00 dpchrist Exp $
+# $Id: Makefile.PL,v 1.9 2010-11-27 07:37:16 dpchrist Exp $
 #
 # Copyright 2010 by David Paul Christensen dpchrist@holgerdanske.com
 #
@@ -36,8 +36,8 @@ WriteMakefile(
     NAME		=> 'Dpchrist-TriangularNumber',
     VERSION_FROM	=> 'lib/Dpchrist/TriangularNumber.pm',
     PREREQ_PM		=> {
-	Dpchrist::Debug		=> 1.043,
-	Dpchrist::Module	=> 1.025,
+	Dpchrist::Debug		=> 1.044,
+	Dpchrist::Module	=> 1.026,
 	Getopt::Long		=> 0,
 	Pod::Html		=> 0,
 	Pod::Text		=> 0,
