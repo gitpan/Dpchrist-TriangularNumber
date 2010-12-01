@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: 2_triangular_inverse.t,v 1.6 2010-07-03 04:52:45 dpchrist Exp $
+# $Id: triangular_inverse.t,v 1.6 2010-07-03 04:52:45 dpchrist Exp $
 #
 # Test script for Dpchrist::TriangularNumber::triangular_inverse().
 #

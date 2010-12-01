@@ -3,12 +3,13 @@ MANIFEST
 README
 Makefile.PL
 lib/Dpchrist/TriangularNumber.pm
-t/0_compile_modules.t
-t/1_Dpchrist-TriangularNumber.t
-t/2_triangular_inverse.t
-t/2_triangular_number.t
-t/3_is_triangular_number.t
-t/9_pod.t
-t/9_prereq.t
-t/example.t
+t/Dpchrist-TriangularNumber.t
+t/is_triangular_number.t
+t/synopsis.t
+t/test-compile-all_pm_files_ok.t
+t/test-pod-all_pod_files_ok.t
+t/test-prereq-prereq_ok.t
+t/test_manifest
+t/triangular_inverse.t
+t/triangular_number.t
 META.yml                                 Module meta-data (added by MakeMaker)

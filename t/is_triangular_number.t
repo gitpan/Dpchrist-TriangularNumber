@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: 3_is_triangular_number.t,v 1.5 2010-07-03 04:52:46 dpchrist Exp $
+# $Id: is_triangular_number.t,v 1.5 2010-07-03 04:52:46 dpchrist Exp $
 #
 # Test script for Dpchrist::TriangularNumber::is_triangular_number().
 #

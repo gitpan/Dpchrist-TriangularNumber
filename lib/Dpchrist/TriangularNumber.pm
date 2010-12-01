@@ -1,5 +1,43 @@
 #######################################################################
-# $Id: TriangularNumber.pm,v 1.20 2010-11-27 07:37:17 dpchrist Exp $
+# $Id: TriangularNumber.pm,v 1.22 2010-11-30 20:29:19 dpchrist Exp $
+#######################################################################
+# package:
+#----------------------------------------------------------------------
+
+package Dpchrist::TriangularNumber;
+
+#######################################################################
+# uses/ requires:
+#----------------------------------------------------------------------
+
+use strict;
+use warnings;
+
+use constant DEBUG		=> 0;
+use constant EPSILON		=> 1.0E-06;
+
+use Dpchrist::Debug		qw( :all );
+
+require Exporter;
+#######################################################################
+# global variables:
+#----------------------------------------------------------------------
+
+our @ISA = qw(Exporter);
+
+our %EXPORT_TAGS = ( 'all' => [ qw(
+    triangular_number
+    triangular_inverse
+    is_triangular_number
+) ] );
+
+our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
+
+our @EXPORT = qw();
+
+our $VERSION = sprintf("%d.%03d", q$Revision: 1.22 $ =~ /(\d+)/g);
+
+#######################################################################
 
 =head1 NAME
 
@@ -7,13 +45,6 @@ Dpchrist::TriangularNumber - Perl extension for Triangular numbers.
 
 
 =head1 SYNOPSIS
-
-See the script t/example.t:
-
-    2010-07-02 21:43:34 dpchrist@p43400e ~/Dpchrist-TriangularNumber
-    $ cat t/example.t 
-    # $Id: TriangularNumber.pm,v 1.20 2010-11-27 07:37:17 dpchrist Exp $
-    # Copyright 2010 by David Christensen dpchrist@holgerdanske.com
 
     use Test::More tests => 1;
     use Dpchrist::TriangularNumber qw( :all );
@@ -32,8 +63,6 @@ See the script t/example.t:
 
 Output:
 
-    2010-07-02 21:51:30 dpchrist@p43400e ~/Dpchrist-TriangularNumber
-    $ perl -Ilib t/example.t 
     1..1
     1, 3, 6, 10, 15, 21, 28, 36, 45, 55
     1, 1.56155281280883, 2, 2.37228132326901, 2.70156211871642, 3, 3.27491721763537, 3.53112887414927, 3.77200187265877, 4
@@ -43,7 +72,7 @@ Output:
 
 =head1 DESCRIPTION
 
-This documentation describes module revision $Revision: 1.20 $.
+This documentation describes module revision $Revision: 1.22 $.
 
 
 This is alpha test level software
@@ -85,53 +114,9 @@ The inverse is given by:
     n = -0.5 +- sqr(0.25 + 2*T)
 
 
-=head2 EXPORT
-
-None by default.
+=head2 SUBROUTINES
 
 =cut
-
-#######################################################################
-# package:
-#----------------------------------------------------------------------
-
-package Dpchrist::TriangularNumber;
-
-#######################################################################
-# uses/ requires:
-#----------------------------------------------------------------------
-
-use strict;
-use warnings;
-
-use constant DEBUG		=> 0;
-use constant EPSILON		=> 1.0E-06;
-
-use Dpchrist::Debug		qw( :all );
-
-require Exporter;
-
-#######################################################################
-# global variables:
-#----------------------------------------------------------------------
-
-our @ISA = qw(Exporter);
-
-our %EXPORT_TAGS = ( 'all' => [ qw(
-    triangular_number
-    triangular_inverse
-    is_triangular_number
-) ] );
-
-our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
-
-our @EXPORT = qw();
-
-our $VERSION = sprintf("%d.%03d", q$Revision: 1.20 $ =~ /(\d+)/g);
-
-#######################################################################
-
-=head2 FUNCTIONS
 
 #----------------------------------------------------------------------
 
@@ -224,6 +209,17 @@ __END__
 #######################################################################
 # remaining pod:
 #----------------------------------------------------------------------
+
+=head2 EXPORT
+
+None by default.
+
+All of the subroutines may be imported by using the ':all' tag:
+
+    use Dpchrist::CGI		qw( :all ); 
+
+See 'perldoc Export' for everything in between.
+
 
 =head1 INSTALLATION
 
