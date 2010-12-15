@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: TriangularNumber.pm,v 1.24 2010-12-05 07:03:26 dpchrist Exp $
+# $Id: TriangularNumber.pm,v 1.25 2010-12-15 01:13:54 dpchrist Exp $
 #######################################################################
 # package:
 #----------------------------------------------------------------------
@@ -28,7 +28,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw();
 
-our $VERSION = sprintf("%d.%03d", q$Revision: 1.24 $ =~ /(\d+)/g);
+our $VERSION = sprintf("%d.%03d", q$Revision: 1.25 $ =~ /(\d+)/g);
 
 #######################################################################
 
@@ -65,7 +65,7 @@ Output:
 
 =head1 DESCRIPTION
 
-This documentation describes module revision $Revision: 1.24 $.
+This documentation describes module revision $Revision: 1.25 $.
 
 
 This is alpha test level software

@@ -1,5 +1,5 @@
 #######################################################################
-# $Id: Makefile.PL,v 1.14 2010-12-13 03:35:46 dpchrist Exp $
+# $Id: Makefile.PL,v 1.15 2010-12-15 01:13:53 dpchrist Exp $
 #
 # Copyright 2010 by David Paul Christensen dpchrist@holgerdanske.com
 #
@@ -28,7 +28,7 @@ warn $@ if $@;
 eval {
     require Dpchrist::ExtUtils::MakeMaker;
     die 'Skipping Dpchrist::ExtUtils::MakeMaker'
-    	unless 1.021 <= $Dpchrist::ExtUtils::MakeMaker::VERSION;
+    	unless 1.023 <= $Dpchrist::ExtUtils::MakeMaker::VERSION;
     import  Dpchrist::ExtUtils::MakeMaker (
 	postamble => sub {
 	    my ($o, $prev) = @_;
@@ -48,7 +48,7 @@ WriteMakefile(
     NAME		=> 'Dpchrist::TriangularNumber',
     VERSION_FROM	=> 'lib/Dpchrist/TriangularNumber.pm',
     PREREQ_PM		=> {
-	Dpchrist::Debug			=> 1.048,
+	Dpchrist::Debug			=> 1.049,
 	Exporter			=> 5.62,
 	ExtUtils::MakeMaker		=> 6.54,
 	Test::Compile			=> 0.10,
